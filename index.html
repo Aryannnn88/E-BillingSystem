@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Restaurant E-Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Indian Restaurant Menu & Billing</h1>
+            <p>Select dishes and quantity, then generate your receipt.</p>
+        </header>
+
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="200" data-name="Paneer Butter Masala">
+                        Paneer Butter Masala - ₹200
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="180" data-name="Chicken Biryani">
+                        Chicken Biryani - ₹180
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="250" data-name="Mutton Rogan Josh">
+                        Mutton Rogan Josh - ₹250
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="150" data-name="Aloo Gobi">
+                        Aloo Gobi - ₹150
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="220" data-name="Palak Paneer">
+                        Palak Paneer - ₹220
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="180" data-name="Chole Bhature">
+                        Chole Bhature - ₹180
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="120" data-name="Samosa">
+                        Samosa - ₹120
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="250" data-name="Butter Chicken">
+                        Butter Chicken - ₹250
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="170" data-name="Masala Dosa">
+                        Masala Dosa - ₹170
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="200" data-name="Pav Bhaji">
+                        Pav Bhaji - ₹200
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="220" data-name="Tandoori Chicken">
+                        Tandoori Chicken - ₹220
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="150" data-name="Dhokla">
+                        Dhokla - ₹150
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="190" data-name="Baingan Bharta">
+                        Baingan Bharta - ₹190
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+                <div class="dish">
+                    <label>
+                        <input type="checkbox" class="dish-select" data-price="210" data-name="Dal Makhani">
+                        Dal Makhani - ₹210
+                    </label>
+                    <input type="number" class="dish-quantity" min="1" max="10" value="1" disabled>
+                </div>
+            </div>
+            <button onclick="generateReceipt()" class="receipt-btn">Generate Receipt</button>
+        </section>
+
+        <section class="receipt">
+            <h2>Receipt</h2>
+            <div id="receipt-output"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
